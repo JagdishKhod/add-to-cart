@@ -28,4 +28,15 @@ export class CartService {
       grandTotal += a.total;
     })
   }
+  removeCartItem(product: any){
+    this.cartItemList.map((a:any,index:any)=>{
+      if(product.id==a.id){
+        this.cartItemList.splice(index,1);
+      }
+    })
+  }
+  removeAllCart(){
+    this.cartItemList = []
+    this.productList.next(this.cartItemList);
+  }
 }
