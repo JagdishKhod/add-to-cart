@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ProductsComponent {
 
+  // publicProductLis
+constructor(){ }
+
+ngOnInIt(): void{
+
+}
 }
